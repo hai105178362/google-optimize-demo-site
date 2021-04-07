@@ -11,8 +11,9 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-194026251-1');
-      var metricValue = '123';
-      ga('set', 'metric1', metricValue);
+      gtag('config', 'GA_MEASUREMENT_ID', {
+        'custom_map': {'metric1': 5}
+      });
     </script>
   </head>
   <body>
